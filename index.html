@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СтройТех — Термопанели из мраморной крошки (Премиум)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #f8f5fb; /* Нежный фиолетовый фон */
+    color: #2c2a35;
+    padding-bottom: 40px;
+    background-image: radial-gradient(#ebe3f2 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* ==== ШАПКА ==== */
+  header {
+    background: linear-gradient(135deg, #8e44ad 0%, #5e2b7a 100%);
+    color: #fff;
+    padding: 24px 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(94, 43, 122, 0.3);
+    border-bottom: 3px solid #d1b3e0;
+  }
+  header h1 {
+    font-size: 34px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  header .subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #d1b3e0;
+    font-weight: 600;
+  }
+  header .phone-big {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    border: 2px solid rgba(255,255,255,.6);
+    border-radius: 40px;
+    transition: all .2s;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(5px);
+  }
+  header .phone-big:hover {
+    background: #fff;
+    color: #5e2b7a;
+    border-color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* ==== ПЛАШКА ПОД ШАПКОЙ (портал) ==== */
+  .portal-hero {
+    max-width: 1400px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+  }
+  .portal-hero a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(135deg, #2d1b36 0%, #1c1022 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 8px 24px rgba(45, 27, 54, 0.3);
+    transition: transform .2s, box-shadow .2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .portal-hero a::before {
+    content: "";
+    position: absolute;
+    top: -50%; left: -60%;
+    width: 40%; height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.15), transparent);
+    transform: skewX(-20deg);
+    transition: left .6s;
+  }
+  .portal-hero a:hover::before { left: 120%; }
+  .portal-hero a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(94, 43, 122, 0.4);
+  }
+  .portal-hero .ph-badge {
+    display: inline-block;
+    background: rgba(142, 68, 173, 0.3);
+    border: 1px solid rgba(209, 179, 224, 0.4);
+    border-radius: 30px;
+    padding: 3px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #d1b3e0;
+  }
+  .portal-hero .ph-icon { font-size: 42px; line-height: 1; flex-shrink: 0; }
+  .portal-hero .ph-text { flex: 1; }
+  .portal-hero .ph-title { font-size: 19px; font-weight: 800; letter-spacing: .3px; margin-bottom: 6px; line-height: 1.25; }
+  .portal-hero .ph-sub { font-size: 13px; opacity: .8; line-height: 1.45; }
+  .portal-hero .ph-arrow { font-size: 28px; flex-shrink: 0; transition: transform .2s; color: #d1b3e0; }
+  .portal-hero a:hover .ph-arrow { transform: translateX(5px); }
+
+  /* ==== ВСТУПИТЕЛЬНЫЙ БЛОК ==== */
+  .intro {
+    max-width: 1400px;
+    margin: 24px auto 4px;
+    padding: 0 24px;
+  }
+  .intro-inner {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(94, 43, 122, 0.08);
+    border: 2px solid #f0e6f5;
+  }
+  .intro-photo {
+    flex: 1 1 400px;
+    min-width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f8f5fb;
+    box-shadow: 0 15px 30px -10px rgba(94, 43, 122, 0.2);
+  }
+  .intro-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .intro-text { flex: 1 1 400px; }
+  .intro-text .intro-badge {
+    display: inline-block;
+    background: rgba(142, 68, 173, 0.1);
+    color: #5e2b7a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 30px;
+    border-left: 4px solid #8e44ad;
+    margin-bottom: 14px;
+  }
+  .intro-text h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #2c2a35;
+    margin-bottom: 14px;
+  }
+  .intro-text p {
+    font-size: 15px;
+    color: #5a6067;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .intro-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5e2b7a;
+  }
+  .intro-points span { display: inline-flex; align-items: center; gap: 8px; }
+  .intro-points span::before {
+    content: "✓";
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: #8e44ad;
+    color: #fff;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(142, 68, 173, 0.4);
+  }
+
+  /* ==== СЕТКА ==== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 22px;
+    padding: 30px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ==== КАРТОЧКА ТОВАРА ==== */
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.03);
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s, box-shadow .25s;
+    position: relative;
+    border: 1px solid #f0e6f5;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(94, 43, 122, 0.15);
+  }
+  .card-img-wrap {
+    position: relative;
+    cursor: zoom-in;
+    border-bottom: 1px solid #fcfaff;
+    overflow: hidden;
+    background: #f8f5fb;
+    aspect-ratio: 1 / 0.95;
+  }
+  .card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+  }
+  .card:hover .card-img-wrap img { transform: scale(1.06); }
+
+  /* Бейджики (лозунги) */
+  .badge-loyalty {
+    position: absolute;
+    top: 10px; left: 10px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  }
+  .badge-gold { background: linear-gradient(135deg, #9b59b6, #71368a); color: #fff; }
+  .badge-dark { background: #2c2a35; color: #fff; }
+  .badge-green { background: #27ae60; color: #fff; }
+  .badge-red { background: #e74c3c; color: #fff; }
+  
+  .badge-eco {
+    position: absolute;
+    bottom: 10px; right: 10px;
+    background: rgba(255,255,255,.95);
+    color: #27ae60;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 30px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  }
+  .badge-eco::before { content: "🌿"; font-size: 11px; }
+
+  .badge-extra {
+    position: absolute;
+    bottom: 10px; left: 10px;
+    background: rgba(44, 42, 53, 0.85);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 30px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+
+  .card-body {
+    padding: 16px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: #2c2a35;
+  }
+  .card-title .art {
+    font-size: 18px;
+    font-weight: 900;
+    color: #71368a;
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+  .card-desc {
+    font-size: 11px;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    min-height: 33px;
+  }
+  
+  /* Блок с ценами */
+  .price-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+    background: #f8f5fb;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f0e6f5;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12px;
+    color: #5a6067;
+    font-weight: 600;
+  }
+  .price-row span:last-child {
+    font-size: 16px;
+    font-weight: 900;
+    color: #2c2a35;
+  }
+  .price-row span:last-child small {
+    font-size: 10px;
+    font-weight: 600;
+    color: #95a5a6;
+  }
+
+  .mini-specs {
+    font-size: 11px;
+    color: #5a6067;
+    line-height: 1.8;
+    border-top: 1px dashed #f0e6f5;
+    padding-top: 10px;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    font-weight: 600;
+  }
+  .mini-specs span { display: inline-flex; align-items: center; gap: 4px; }
+  .mini-specs span::before { content: "•"; color: #8e44ad; font-size: 14px; }
+
+  .btn-order {
+    display: inline-block;
+    margin-top: 14px;
+    background: linear-gradient(135deg, #8e44ad 0%, #5e2b7a 100%);
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    padding: 12px 12px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all .2s;
+    box-shadow: 0 4px 12px rgba(94, 43, 122, 0.3);
+  }
+  .btn-order:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 6px 16px rgba(94, 43, 122, 0.5);
+    transform: translateY(-1px);
+  }
+
+  /* ==== CTA С ТЕЛЕФОНОМ ==== */
+  .cta-row {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #2d1b36 0%, #1c1022 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px 24px; /* Сделал чуть компактнее */
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(45, 27, 54, 0.2);
+    margin: 6px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 24px;
+  }
+  .cta-row .cta-text { font-size: 14px; font-weight: 700; line-height: 1.4; }
+  .cta-row .cta-text small { display: block; font-size: 11px; font-weight: 400; opacity: .8; margin-top: 2px; }
+  .cta-row .cta-btn {
+    display: inline-block;
+    background: #8e44ad;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    white-space: nowrap;
+    transition: all .2s;
+    box-shadow: 0 4px 12px rgba(142, 68, 173, 0.3);
+  }
+  .cta-row .cta-btn:hover {
+    background: #fff;
+    color: #2d1b36;
+    transform: translateY(-2px);
+  }
+
+  /* ==== БЛОК «СТРОИТЕЛЬНЫЙ ПОРТАЛ РОСТОВА» В СЕТКЕ (Компактный) ==== */
+  .portal-block {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #2d1b36 0%, #1c1022 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px 20px; /* Компактные отступы */
+    box-shadow: 0 6px 18px rgba(45, 27, 54, 0.2);
+    margin: 6px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .portal-block::before {
+    content: "";
+    position: absolute;
+    top: -50%; left: -60%;
+    width: 40%; height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.1), transparent);
+    transform: skewX(-20deg);
+    transition: left .7s;
+  }
+  .portal-block:hover::before { left: 120%; }
+
+  .portal-block .pb-left { flex: 1; min-width: 240px; }
+  .portal-block .pb-badge {
+    display: inline-block;
+    background: rgba(142, 68, 173, 0.3);
+    border: 1px solid rgba(209, 179, 224, 0.3);
+    border-radius: 30px;
+    padding: 2px 10px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: #d1b3e0;
+  }
+  .portal-block .pb-title { font-size: 16px; font-weight: 800; line-height: 1.3; margin-bottom: 4px; }
+  .portal-block .pb-sub { font-size: 12px; opacity: .8; line-height: 1.4; }
+  .portal-block .pb-sub b { color: #d1b3e0; font-weight: 800; }
+  
+  .portal-block .pb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #8e44ad;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all .2s;
+    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
+    white-space: nowrap;
+  }
+  .portal-block .pb-btn:hover {
+    transform: translateY(-2px);
+    background: #fff;
+    color: #2d1b36;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+  }
+  .portal-block .pb-btn .pb-arrow { transition: transform .2s; }
+  .portal-block .pb-btn:hover .pb-arrow { transform: translateX(4px); }
+
+  /* ==== ПОДВАЛ ==== */
+  footer {
+    text-align: center;
+    padding: 30px 20px 10px;
+    color: #7f8c8d;
+    font-size: 13px;
+    line-height: 1.8;
+    border-top: 1px solid #f0e6f5;
+    margin-top: 40px;
+  }
+  footer a { color: #71368a; text-decoration: none; font-weight: 700; }
+  footer a:hover { text-decoration: underline; }
+  footer .portal-link { margin-top: 10px; font-size: 12px; color: #95a5a6; }
+  footer .portal-link a { color: #2c2a35; font-weight: 700; }
+
+  /* ==== ЛАЙТБОКС ==== */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 15, 25, 0.95);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+  }
+  .lightbox.active { opacity: 1; visibility: visible; }
+  .lightbox-inner {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 580px;
+    width: 100%;
+    box-shadow: 0 30px 80px -20px #000;
+    transform: scale(.95);
+    transition: transform .25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+  }
+  .lightbox.active .lightbox-inner { transform: scale(1); }
+  .lightbox-inner img {
+    width: 100%;
+    aspect-ratio: 1 / .85;
+    object-fit: cover;
+    display: block;
+    background: #f8f5fb;
+  }
+  .lightbox-body { padding: 24px 28px 30px; }
+  .lightbox-body .lb-art {
+    font-size: 26px;
+    font-weight: 900;
+    color: #71368a;
+    margin-bottom: 4px;
+  }
+  .lightbox-body .lb-title { font-size: 16px; font-weight: 700; color: #2c2a35; margin-bottom: 16px; }
+  
+  .lightbox-price-block {
+    margin-bottom: 20px;
+    background: #f8f5fb;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #f0e6f5;
+  }
+  .lightbox-price-block .price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5a6067;
+    margin-bottom: 8px;
+  }
+  .lightbox-price-block .price-row:last-child { margin-bottom: 0; }
+  .lightbox-price-block .price-row span:last-child { font-size: 20px; font-weight: 900; color: #2c2a35; }
+  
+  .lightbox-body .lb-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .lightbox-body .lb-actions .btn-order { flex: 1; margin-top: 0; padding: 15px 20px; font-size: 15px; border-radius: 16px; }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all .2s;
+  }
+  .lightbox-close:hover { background: #8e44ad; transform: rotate(90deg); }
+
+  /* ==== МОБИЛЬНАЯ АДАПТАЦИЯ ==== */
+  @media (max-width: 700px) {
+    header { padding: 20px 14px; }
+    header h1 { font-size: 26px; letter-spacing: 3px; }
+    header .subtitle { font-size: 11px; margin-bottom: 12px; }
+    header .phone-big { font-size: 18px; padding: 8px 16px; }
+
+    .portal-hero { padding: 0 14px; margin-top: 16px; }
+    .portal-hero a { padding: 16px 16px; gap: 12px; border-radius: 14px; }
+    .portal-hero .ph-icon { font-size: 32px; }
+    .portal-hero .ph-title { font-size: 15px; }
+    .portal-hero .ph-sub { font-size: 12px; }
+    .portal-hero .ph-arrow { font-size: 22px; }
+
+    .intro { padding: 0 14px; margin-top: 18px; }
+    .intro-inner { padding: 20px 18px; gap: 20px; border-radius: 20px; }
+    .intro-photo { flex: 1 1 100%; }
+    .intro-photo img { max-height: 250px; }
+    .intro-text h2 { font-size: 22px; }
+    .intro-text p { font-size: 13px; }
+    .intro-points { font-size: 12px; gap: 10px 16px; }
+
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 16px 10px;
+    }
+    .card-img-wrap { aspect-ratio: 1 / 1; }
+    .card-body { padding: 12px 12px 14px; }
+    .card-title { font-size: 11px; }
+    .card-title .art { font-size: 15px; }
+    .card-desc { font-size: 10px; margin-bottom: 8px; min-height: auto; }
+    
+    .price-block { padding: 8px; gap: 4px; margin-bottom: 8px; }
+    .price-row { font-size: 10px; }
+    .price-row span:last-child { font-size: 14px; }
+    .price-row span:last-child small { font-size: 9px; }
+
+    .mini-specs { font-size: 10px; line-height: 1.5; gap: 4px 8px; padding-top: 8px; }
+    .btn-order { font-size: 12px; padding: 10px 8px; border-radius: 10px; }
+    
+    .badge-loyalty { font-size: 8px; padding: 3px 8px; top: 8px; left: 8px; }
+    .badge-eco { font-size: 8px; padding: 2px 7px; bottom: 8px; right: 8px; }
+    .badge-extra { font-size: 7px; padding: 2px 7px; bottom: 8px; left: 8px; }
+
+    .cta-row { padding: 12px 14px; gap: 8px; border-radius: 14px; flex-direction: column; text-align: center; }
+    .cta-row .cta-text { font-size: 12px; }
+    .cta-row .cta-text small { font-size: 10px; }
+    .cta-row .cta-btn { font-size: 12px; padding: 10px 16px; width: 100%; }
+
+    .portal-block { padding: 16px; border-radius: 14px; flex-direction: column; text-align: center; }
+    .portal-block .pb-left { min-width: 100%; }
+    .portal-block .pb-title { font-size: 15px; }
+    .portal-block .pb-sub { font-size: 11px; margin-bottom: 12px; }
+    .portal-block .pb-btn { font-size: 12px; padding: 10px 16px; width: 100%; justify-content: center; }
+
+    .lightbox-inner img { aspect-ratio: 1 / 1; }
+    .lightbox-body { padding: 20px; }
+    .lightbox-body .lb-art { font-size: 22px; }
+    .lightbox-price-block .price-row { font-size: 12px; }
+    .lightbox-price-block .price-row span:last-child { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==== ШАПКА ==== -->
+<header>
+  <h1>СтройТех</h1>
+  <div class="subtitle">Производство Россия · Мрамор (Польша)</div>
+  <a class="phone-big" href="tel:+79281647988">+7 (928) 164-79-88</a>
+</header>
+
+<!-- ==== ПЛАШКА ПОД ШАПКОЙ ==== -->
+<div class="portal-hero">
+  <a href="https://lex39039.github.io/rfrostov-portal/?clckid=36f7699f" target="_blank" rel="noopener">
+    <span class="ph-icon">🏗️</span>
+    <span class="ph-text">
+      <span class="ph-badge">Строительный портал Ростова-на-Дону</span>
+      <span class="ph-title">Проверенные строительные компании Ростова-на-Дону</span>
+      <span class="ph-sub">Каталог компаний, рейтинги, отзывы и контакты — на одном портале</span>
+    </span>
+    <span class="ph-arrow">→</span>
+  </a>
+</div>
+
+<!-- ==== ВСТУПИТЕЛЬНЫЙ БЛОК ==== -->
+<div class="intro">
+  <div class="intro-inner">
+    <div class="intro-photo">
+      <img src="main-klinker.jpg" alt="Дом с фасадными термопанелями из мраморной крошки">
+    </div>
+    <div class="intro-text">
+      <span class="intro-badge">Премиум-сегмент · Экологичность</span>
+      <h2>Фасадные термопанели из мраморной крошки</h2>
+      <p>
+        Инновационное решение для вашего дома. Мы предлагаем материал, который не просто украшает фасад, но и делает его энергоэффективным. Натуральная мраморная крошка из Польши, экологически чистые компоненты и передовые немецкие технологии производства гарантируют непревзойденную долговечность и безупречный внешний вид на десятилетия.
+      </p>
+      <div class="intro-points">
+        <span>Гарантия 50 лет</span>
+        <span>100% Экологично</span>
+        <span>Монтаж под ключ</span>
+        <span>Расчёт и доставка</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- ============ 28 КАРТОЧЕК ТЕРМОПАНЕЛЕЙ ============ -->
+
+  <!-- 1 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 10-21" data-img="i (1).webp">
+      <span class="badge-loyalty badge-gold">ХИТ ПРОДАЖ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">🔥 Тепло</span>
+      <img src="i (1).webp" alt="Термопанель мраморная крошка Арт. 10-21">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 10-21</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Немецкая технология. Безупречная фактура.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 12-20" data-img="i (2).webp">
+      <span class="badge-loyalty badge-green">ГАРАНТИЯ КАЧЕСТВА</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">🛡️ Защита</span>
+      <img src="i (2).webp" alt="Термопанель мраморная крошка Арт. 12-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 12-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Долговечность и стойкость к любым погодным условиям.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 13-20" data-img="i (3).webp">
+      <span class="badge-loyalty badge-dark">НЕМЕЦКОЕ КАЧЕСТВО</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">⭐ Премиум</span>
+      <img src="i (3).webp" alt="Термопанель мраморная крошка Арт. 13-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 13-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Инновационный фасадный материал нового поколения.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 14-20" data-img="i (4).webp">
+      <span class="badge-loyalty badge-red">СКИДКА ОТ 200М²</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">💰 Выгода</span>
+      <img src="i (4).webp" alt="Термопанель мраморная крошка Арт. 14-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 14-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Выгодное решение для масштабного строительства.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 15-20" data-img="i (5).webp">
+      <span class="badge-loyalty badge-gold">ЭНЕРГОЭФФЕКТИВНОСТЬ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">♻️ Эко</span>
+      <img src="i (5).webp" alt="Термопанель мраморная крошка Арт. 15-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 15-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Сохраняет тепло зимой и прохладу летом.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 16-20" data-img="i (6).webp">
+      <span class="badge-loyalty badge-green">ЭКОЛОГИЧНО</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">🌱 Натурально</span>
+      <img src="i (6).webp" alt="Термопанель мраморная крошка Арт. 16-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 16-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Безопасный материал для здоровья всей семьи.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- ▼ CTA №1 ▼ -->
+  <div class="cta-row">
+    <div class="cta-text">
+      Нужна помощь с выбором?
+      <small>Подскажем по фактуре, цвету и объёму</small>
+    </div>
+    <a class="cta-btn" href="tel:+79281647988">Получить консультацию</a>
+  </div>
+
+  <!-- 7 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 17-20" data-img="i (7).webp">
+      <span class="badge-loyalty badge-dark">ДОЛГОВЕЧНОСТЬ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">⏳ 50 лет</span>
+      <img src="i (7).webp" alt="Термопанель мраморная крошка Арт. 17-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 17-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Не теряет цвет и форму на протяжении 50 лет.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 18-20" data-img="i (8).webp">
+      <span class="badge-loyalty badge-gold">ПРЕМИУМ КЛАСС</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">👑 VIP</span>
+      <img src="i (8).webp" alt="Термопанель мраморная крошка Арт. 18-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 18-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Элитная отделка, доступная каждому.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 19-20" data-img="i (9).webp">
+      <span class="badge-loyalty badge-green">ГОСТ</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">📜 Стандарт</span>
+      <img src="i (9).webp" alt="Термопанель мраморная крошка Арт. 19-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 19-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Полное соответствие государственным стандартам.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 20-20" data-img="i (10).webp">
+      <span class="badge-loyalty badge-red">ХИТ СЕЗОНА</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">🔥 Спрос</span>
+      <img src="i (10).webp" alt="Термопанель мраморная крошка Арт. 20-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 20-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Самый популярный выбор наших клиентов.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 11 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 21-20" data-img="i (11).webp">
+      <span class="badge-loyalty badge-dark">ИННОВАЦИЯ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">🚀 Новинка</span>
+      <img src="i (11).webp" alt="Термопанель мраморная крошка Арт. 21-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 21-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Передовые технологии в каждой панели.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 12 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 22-20" data-img="i (12).webp">
+      <span class="badge-loyalty badge-gold">МОРОЗОСТОЙКОСТЬ F300</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">❄️ F300</span>
+      <img src="i (12).webp" alt="Термопанель мраморная крошка Арт. 22-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 22-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Выдерживает любые перепады температур.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- ▼ КОМПАКТНЫЙ БЛОК ПОРТАЛА №1 ▼ -->
+  <div class="portal-block">
+    <div class="pb-left">
+      <span class="pb-badge">Строительный портал Ростова</span>
+      <div class="pb-title">Проверенные компании</div>
+      <div class="pb-sub">Рейтинги, отзывы и контакты — <b>200+</b> проверенных подрядчиков.</div>
+    </div>
+    <a class="pb-btn" href="https://lex39039.github.io/rfrostov-portal/?clckid=36f7699f" target="_blank" rel="noopener">
+      Перейти <span class="pb-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- 13 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 23-20" data-img="i (13).webp">
+      <span class="badge-loyalty badge-green">НАТУРАЛЬНЫЙ СОСТАВ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">🌿 Природа</span>
+      <img src="i (13).webp" alt="Термопанель мраморная крошка Арт. 23-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 23-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Только натуральные и безопасные компоненты.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 14 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 24-20" data-img="i (14).webp">
+      <span class="badge-loyalty badge-red">ТОП ВЫБОР</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">🏆 Топ</span>
+      <img src="i (14).webp" alt="Термопанель мраморная крошка Арт. 24-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 24-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Идеальное соотношение цены и качества.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 15 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 25-20" data-img="i (15).webp">
+      <span class="badge-loyalty badge-dark">ГАРАНТИЯ 50 ЛЕТ</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">🤝 Доверие</span>
+      <img src="i (15).webp" alt="Термопанель мраморная крошка Арт. 25-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 25-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Уверенность в качестве на десятилетия.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 16 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 26-20" data-img="i (16).webp">
+      <span class="badge-loyalty badge-gold">ЭСТЕТИКА И СТИЛЬ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">🎨 Дизайн</span>
+      <img src="i (16).webp" alt="Термопанель мраморная крошка Арт. 26-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 26-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Современный вид вашего дома навсегда.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 17 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 27-20" data-img="i (17).webp">
+      <span class="badge-loyalty badge-green">ЭКО-СЕРТИФИКАТ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">📋 Сертификат</span>
+      <img src="i (17).webp" alt="Термопанель мраморная крошка Арт. 27-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 27-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Подтвержденная безопасность для природы.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- ▼ CTA №2 ▼ -->
+  <div class="cta-row">
+    <div class="cta-text">
+      Не знаете, сколько нужно материала?
+      <small>Рассчитаем количество и стоимость по телефону</small>
+    </div>
+    <a class="cta-btn" href="tel:+79281647988">Получить консультацию</a>
+  </div>
+
+  <!-- 18 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 28-20" data-img="i (18).webp">
+      <span class="badge-loyalty badge-red">СКИДКА 10%</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">🏷️ Акция</span>
+      <img src="i (18).webp" alt="Термопанель мраморная крошка Арт. 28-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 28-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Специальное предложение для наших клиентов.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 19 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 29-20" data-img="i(19).webp">
+      <span class="badge-loyalty badge-dark">НЕМЕЦКИЙ СТАНДАРТ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">🇩🇪 Германия</span>
+      <img src="i(19).webp" alt="Термопанель мраморная крошка Арт. 29-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 29-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Безупречное качество по немецким технологиям.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 20 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 30-20" data-img="i (20).webp">
+      <span class="badge-loyalty badge-gold">ХИТ ПРОДАЖ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">🔥 Тепло</span>
+      <img src="i (20).webp" alt="Термопанель мраморная крошка Арт. 30-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 30-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Надежность и комфорт в каждой детали.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 21 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 31-20" data-img="i (21).webp">
+      <span class="badge-loyalty badge-green">ГАРАНТИЯ</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">🛡️ Защита</span>
+      <img src="i (21).webp" alt="Термопанель мраморная крошка Арт. 31-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 31-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Долговечность, проверенная временем.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- ▼ КОМПАКТНЫЙ БЛОК ПОРТАЛА №2 ▼ -->
+  <div class="portal-block">
+    <div class="pb-left">
+      <span class="pb-badge">Строительный портал Ростова</span>
+      <div class="pb-title">Проверенные компании</div>
+      <div class="pb-sub">Рейтинги, отзывы и контакты — <b>200+</b> проверенных подрядчиков.</div>
+    </div>
+    <a class="pb-btn" href="https://lex39039.github.io/rfrostov-portal/?clckid=36f7699f" target="_blank" rel="noopener">
+      Перейти <span class="pb-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- 22 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 32-20" data-img="i (22).webp">
+      <span class="badge-loyalty badge-red">СКИДКА ОТ 200М²</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">💰 Выгода</span>
+      <img src="i (22).webp" alt="Термопанель мраморная крошка Арт. 32-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 32-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Выгодное решение для масштабного строительства.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 23 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 33-20" data-img="i (23).webp">
+      <span class="badge-loyalty badge-dark">ЭНЕРГОЭФФЕКТИВНОСТЬ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">♻️ Эко</span>
+      <img src="i (23).webp" alt="Термопанель мраморная крошка Арт. 33-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 33-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Сохраняет тепло зимой и прохладу летом.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 24 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 34-20" data-img="i (24).webp">
+      <span class="badge-loyalty badge-green">ЭКОЛОГИЧНО</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">🌱 Натурально</span>
+      <img src="i (24).webp" alt="Термопанель мраморная крошка Арт. 34-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 34-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Безопасный материал для здоровья всей семьи.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 25 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 35-20" data-img="i (25).webp">
+      <span class="badge-loyalty badge-gold">ДОЛГОВЕЧНОСТЬ</span>
+      <span class="badge-eco">Эко-материал</span>
+      <span class="badge-extra">⏳ 50 лет</span>
+      <img src="i (25).webp" alt="Термопанель мраморная крошка Арт. 35-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 35-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Не теряет цвет и форму на протяжении 50 лет.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 26 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 36-20" data-img="i (26).webp">
+      <span class="badge-loyalty badge-red">ПРЕМИУМ КЛАСС</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">👑 VIP</span>
+      <img src="i (26).webp" alt="Термопанель мраморная крошка Арт. 36-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 36-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Элитная отделка, доступная каждому.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППУ</span>
+        <span>F300</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 27 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 37-20" data-img="i (27).webp">
+      <span class="badge-loyalty badge-green">ГОСТ</span>
+      <span class="badge-eco">Безопасно</span>
+      <span class="badge-extra">📜 Стандарт</span>
+      <img src="i (27).webp" alt="Термопанель мраморная крошка Арт. 37-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 37-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Полное соответствие государственным стандартам.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>В наличии</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- 28 -->
+  <div class="card">
+    <div class="card-img-wrap" data-art="Арт. 38-20" data-img="i (28).webp">
+      <span class="badge-loyalty badge-dark">ИННОВАЦИЯ</span>
+      <span class="badge-eco">100% Эко</span>
+      <span class="badge-extra">🚀 Новинка</span>
+      <img src="i (28).webp" alt="Термопанель мраморная крошка Арт. 38-20">
+    </div>
+    <div class="card-body">
+      <div class="card-title"><span class="art">Арт. 38-20</span>Термопанель мраморная крошка</div>
+      <div class="card-desc">Передовые технологии в каждой панели.</div>
+      
+      <div class="price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="mini-specs">
+        <span>Утеплитель: ППС</span>
+        <span>ГОСТ</span>
+        <span>Монтаж под ключ</span>
+      </div>
+      <a class="btn-order" href="tel:+79281647988">Заказать</a>
+    </div>
+  </div>
+
+  <!-- ▼ CTA №3 ▼ -->
+  <div class="cta-row">
+    <div class="cta-text">
+      Есть вопросы по монтажу?
+      <small>Проконсультируем бесплатно</small>
+    </div>
+    <a class="cta-btn" href="tel:+79281647988">Получить консультацию</a>
+  </div>
+
+</div>
+
+<!-- ==== ПОДВАЛ ==== -->
+<footer>
+  <div>
+    СтройТех — фасадные термопанели из мраморной крошки ·
+    <a href="tel:+79281647988">+7 (928) 164-79-88</a>
+  </div>
+  <div class="portal-link">
+    Строительный портал Ростова-на-Дону —
+    <a href="https://lex39039.github.io/rfrostov-portal/?clckid=36f7699f" target="_blank" rel="noopener">
+      проверенные строительные компании →
+    </a>
+  </div>
+</footer>
+
+<!-- ==== ЛАЙТБОКС ==== -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <img id="lightboxImg" src="" alt="Термопанель мраморная крошка">
+    <div class="lightbox-body">
+      <div class="lb-art" id="lightboxArt">Арт. 10-21</div>
+      <div class="lb-title">Термопанель мраморная крошка (Немецкая технология)</div>
+      
+      <div class="lightbox-price-block">
+        <div class="price-row"><span>890х600х3см</span><span>1500 ₽</span></div>
+        <div class="price-row"><span>890х600х5см</span><span>1800 ₽</span></div>
+      </div>
+
+      <div class="lb-actions">
+        <a class="btn-order" href="tel:+79281647988">Позвонить и заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxArt = document.getElementById('lightboxArt');
+    var closeBtn = document.getElementById('lightboxClose');
+
+    function openLightbox(wrap) {
+      var img = wrap.querySelector('img');
+      var art = wrap.getAttribute('data-art') || '';
+      lightboxImg.src = img ? img.src : '';
+      lightboxImg.alt = img ? img.alt : 'Термопанель мраморная крошка';
+      lightboxArt.textContent = art;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.card-img-wrap').forEach(function(wrap) {
+      wrap.addEventListener('click', function() {
+        openLightbox(wrap);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
